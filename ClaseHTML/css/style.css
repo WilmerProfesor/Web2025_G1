@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(146, 151, 151);
+}
+h1{
+    color: red;
+    background-color: blue;
+    font-size: 60px;
+}
+
+img{
+    border-radius: 15px;
+    height: 50vh;
+    width: 50vw;
+ box-shadow: 5px 5px 10px black;
+}
+
+#id{
+    width: 300px;
+    height: 300px;
+}
