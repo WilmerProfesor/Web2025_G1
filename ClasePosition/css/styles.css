@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Este test lo empleamos para evidenciar la necesidad de normalizar los estilos de margin padding y box-sizing de todo el sitio [*]
+#test{
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+    border: solid red;
+    border-width: 10px;
+
+} */
+
+#contenedor{
+    height: 400px;
+}
+
+body{
+    height: 200vh;
+}
+
+.caja{
+    border:solid;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#personalizada{
+    background-color: red;
+    /* position: absolute / relative / stiky / fixed */
+    position:fixed;  
+    top: 10px;
+    left: 30px;
+}
