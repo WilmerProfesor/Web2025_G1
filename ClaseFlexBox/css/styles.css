@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    border: solid green;
+    min-width: 500px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 3rem;
+}
+
+body{
+    background-color: gray;    
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 100px;
+}
