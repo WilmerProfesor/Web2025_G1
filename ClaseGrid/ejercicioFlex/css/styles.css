@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 25%;
+    width: 100%;
+    background-color: blue;
+}
+
+aside{
+    width: 30%;
+    height: 100% ;
+    background-color: green;
+}
+
+main{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    display: flex;
+}
+
+article{
+    width: 50%;
+    height: 100%;
+}
+
+#art1{
+    background-color: red;
+}
+
+footer{
+    width: 100%;
+    height: 50%;
+    background-color: greenyellow;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;    
+}
+
+#c{
+    display: flex;
+    width: 100%;
+    height: 75%;    
+}
+
+#e{
+    width: 70%;
+    height: 100%;    
+}
+
+
+
+
