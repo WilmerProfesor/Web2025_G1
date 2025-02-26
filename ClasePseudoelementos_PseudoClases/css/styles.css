@@ -1,0 +1,15 @@
+h1{
+    font-size: 5rem;
+}
+
+h1:hover{
+    color: red;
+}
+
+h1::first-letter{
+    color: red;
+}
+h1:hover::first-letter{
+    color: blue;
+    font-size: 8rem;
+}
