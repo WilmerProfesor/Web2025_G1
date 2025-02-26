@@ -1,0 +1,19 @@
+#uno{
+    background-color: red;
+}
+
+#dos{
+    background-color: blue;
+}
+
+.tres{
+    background-color: green;
+}
+
+.menu{
+    background-color: rgb(168, 206, 168);
+}
+
+.carusel__altura__500px{
+    height: 300px;
+}
