@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#caja1{
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    border: solid red;
+    background-color: red;
+    /* background-image: radial-gradient(circle, red, green, blue) ; */
+    /* transform: translate(300px, 300px); */
+    /* transform: rotate(55deg);
+    transform: rotateY(55deg);
+    transform: rotateX(55deg); */
+     transition: 2s;
+    /* transform: skew(10deg, 20deg); */
+}
+
+#caja1:hover{
+    transform: rotateY(180deg);
+}
