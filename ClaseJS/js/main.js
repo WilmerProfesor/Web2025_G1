@@ -85,3 +85,57 @@
 // el promedio del curso.
 // Repetir la acción hasta que se indique que no se desean 
 // agregar mas notas
+
+
+//<<<<<< Funciones  >>>>>>>>
+
+function suma(x, y) {
+    return x+y;
+}
+console.log(suma(4,5));
+
+//<<<<<< Funciones Anónimas  >>>>>>>>
+
+const resta= function(x, y) {
+    return x-y;
+}
+console.log(resta(5,3));
+
+
+//<<<<<< Funciones Flecha (ArrowFuncions)  >>>>>>>>
+
+// ()=>{}
+// var=>{}
+// (var1, var2)=>{}
+// (var1, var2)=>{
+//     line1;
+//     line2;
+//     line...;
+// }
+// ()=>retunr hfdksf;
+
+const multiplicacion_v1= (a, b)=>{return a*b};
+const multiplicacion_v2= (a, b)=>a*b;
+const multiplicacionTabla7_v1= a =>a*7;
+const multiplicacionTabla7_v2= (a) =>{return a*7};
+const multiplicacionTabla7_v3= (a) =>{
+    let res=0;
+    for (let i = 1; i <= a; i++) {
+        res+=7;        
+    }
+    return res;
+}
+const tablaDel3=()=>{
+    for (let i = 1; i < 11; i++) {
+        console.log(3+" x "+i+" = "+3*i);        
+    }
+}
+
+
+console.log(multiplicacion_v1(4,3));
+console.log(multiplicacion_v2(5,4));
+console.log(multiplicacionTabla7_v1(3));
+console.log(multiplicacionTabla7_v2(3));
+console.log(multiplicacionTabla7_v3(3));
+console.log(tablaDel3());
+
