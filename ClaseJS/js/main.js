@@ -86,7 +86,7 @@
 // Repetir la acción hasta que se indique que no se desean 
 // agregar mas notas
 
-
+//-------------------------------------------------------
 //<<<<<< Funciones  >>>>>>>>
 
 function suma(x, y) {
@@ -112,7 +112,7 @@ console.log(resta(5,3));
 //     line2;
 //     line...;
 // }
-// ()=>retunr hfdksf;
+// ()=>________; // retorna automáticamente la única línea de código (no usa return)
 
 const multiplicacion_v1= (a, b)=>{return a*b};
 const multiplicacion_v2= (a, b)=>a*b;
