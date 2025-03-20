@@ -1,0 +1,15 @@
+
+#header_v1{
+    display: flex;
+    justify-content: start;
+    padding: 5px;  
+    background-color: black;
+    color: white;  
+}
+#circuloLogo{    
+    border: solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}

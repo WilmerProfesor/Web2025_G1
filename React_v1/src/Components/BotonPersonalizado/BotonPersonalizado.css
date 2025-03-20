@@ -1,0 +1,14 @@
+#botonPersonalizado{
+    border: solid black;
+    box-shadow: 3px 3px 5px gray;
+    background-color: azure;
+    width: 200px;
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    &:hover{
+        background-color: #4CAF50;
+    }
+}
