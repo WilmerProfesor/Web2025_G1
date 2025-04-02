@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: colum;
     align-items: center;
     width: 100%;
     background-color: #ccc;
