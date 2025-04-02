@@ -7,3 +7,11 @@
 body{
   width: 100vw;
 }
+
+main{
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
