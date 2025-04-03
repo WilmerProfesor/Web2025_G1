@@ -1,0 +1,4 @@
+#cardContent{
+    display: flex;
+    flex-direction: column;
+}

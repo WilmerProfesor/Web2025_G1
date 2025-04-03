@@ -2,21 +2,29 @@ import { useEffect, useState } from 'react';
 
 import Header from "./Components/Header/Header";
 import CardTest from "./Components/CardTest/CardTest";
-
+import Pagination from '@mui/material/Pagination';
 
 import "./App.css"
 
 const App = () => {
 
   const [arrayObjects, setArrayObjects] = useState([])
+  const [totalPages, setTotalPages] = useState(1)
 
   useEffect(()=>{
     fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())
-  .then(data => setArrayObjects(data.results));
-
-
+  .then(data => {
+    setArrayObjects(data.results)
+    setTotalPages(data.info.pages)
+  })
   },[])
+
+  const handlePagination=(event, page)=>{
+    fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+  .then(response => response.json())
+  .then(data => setArrayObjects(data.results))
+  }
 
 return (
   <>
@@ -24,11 +32,14 @@ return (
       <main>
         {arrayObjects.map((item)=>{
           return (
-            <CardTest name={item.name} img={item.image} />
+            <CardTest genero={item.gender} name={item.name} especies={item.species} img={item.image} />
           )
         })}      
 
       </main>
+      <div id="pagination">
+        <Pagination onChange={handlePagination} count={totalPages} variant="outlined" shape="rounded" />      
+      </div>
     </>
   )
 }
