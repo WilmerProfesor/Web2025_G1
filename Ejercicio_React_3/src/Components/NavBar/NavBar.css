@@ -1,0 +1,17 @@
+nav{
+    ul{
+        display: flex;
+        background-color: rgb(175, 25, 25);
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;        
+        .item{
+            text-decoration: none;
+            margin: 20px;
+            color: white;
+        }
+    }
+}
