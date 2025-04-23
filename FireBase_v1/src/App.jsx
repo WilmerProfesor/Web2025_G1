@@ -19,9 +19,9 @@ function App() {
       const data=[];
       querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
-        data.push({...doc.data(), id: doc.id});
-        setStudents(data);
+        data.push({...doc.data(), id: doc.id});        
       });
+      setStudents(data);
       console.log(data);
     }
     fetchStudents();
@@ -30,10 +30,10 @@ function App() {
   const dato = { nombre: "JUan", apellido: "Pérez", edad: 20, image: "https://www.w3schools.com/w3images/lights.jpg" }
 
   return (
-    <main>
-      {students.map((student) =>
-       {return <Students key={student.id} item={student} />}
-      )}
+    <main>      
+      {
+      students.length > 0 ?students.map((student) =>( <Students key={student.id} item={student} />)
+      ):"Cargando..."}
       {/* <Students item={students[0]} /> */}
     </main>
   )
