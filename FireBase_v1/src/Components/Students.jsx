@@ -7,9 +7,10 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 const Students = ({item}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minWidth:200 }}>
     <CardActionArea>
       <CardMedia
+        sx={{ borderRadius: '50%', width: 140, height: 140, margin: 2, boxShadow: 3 }}      // component="img"                
         component="img"
         height="140"
         image={item.imagen}
