@@ -1,7 +1,5 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
@@ -10,9 +8,9 @@ import HomePage from './Pages/HomePage/HomePage'
 import DetailsPage from './Pages/DetailsPage/DetailsPage'
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import FilterPage from './Pages/FilterPage/FilterPage'
-const App = () => {
 
-  
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+const App = () => {
 
   return (
     <>
